@@ -9,7 +9,9 @@
   background: var(--M3-sys-light-surface, #FEF7FF);
 }
 
+// TODO SCSS nesting instead of plain, move inside :host
 :host:hover{
+  // TODO rem instead of pixel
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -17,6 +19,7 @@
   height: 8rem;
   align-self: stretch;
   border-radius: var(--md-sys-size-4, 1rem);
+  // <img instead
   background: url('../../assets/base_img.png'), lightgray 50% / cover no-repeat;
   background-size: 100% 100%;
 }
@@ -24,6 +27,7 @@
 .container{
   display: inherit;
   flex-direction: inherit;
+  // TODO no fallback
   padding: var(--md-sys-size-2, 8px) var(--md-sys-size-4, 16px) var(--md-sys-size-4, 16px) var(--md-sys-size-4, 16px);
 }
 
@@ -42,8 +46,10 @@
   align-self: flex-end;
   gap: var(--md-sys-size-1, 0.25rem);
 
+  // TODO kebap case
   .btn_primary{
     width: 6rem;
+    // TODO use rem instead
     border-radius: 100px;
     border: 1px solid var(--M3-sys-light-outline, var(--outline));
   }
