@@ -9,4 +9,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --outline-variant: #CAC4D0;
   --primary: #6750A4;
   --surface-container: #F3EDF7;
+  --light-surface: #FEF7FF;
+  --light-on-surface: #1D1B20;
+
+  @media (prefers-color-scheme: light){
+    --md-sys-color-background: white;
+  }
+
+  @media (prefers-color-scheme: dark){
+    --md-sys-color-background: black;
+  }
 }
+

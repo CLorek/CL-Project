@@ -1,27 +1,9 @@
-<!--nice! TODO move mat-toolbar to labs-appbar component -->
-<mat-toolbar class="bar">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <section>
-    <div class="icon_img"></div>
-  </section>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>notifications</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
+  <app-appbar/>
   <div class="title">{{title}}</div>
   <div class="container">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    @for(card of cards; track card){
+      <app-card [title]='card.name'></app-card>
+    }
   </div>
 
 

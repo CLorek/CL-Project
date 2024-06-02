@@ -1,0 +1,30 @@
+:host{
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  z-index: 300;
+}
+
+.title{
+  text-overflow: ellipsis;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+// TODO kebap-case instead
+.icon_img{
+  width: 2.625rem;
+  height: 2.625rem;
+  align-self: center;
+  flex-shrink: 0;
+  border-radius: var(--md-sys-size-4, 1rem);
+  background: url('../../assets/icon.png'), lightgray 50% / cover no-repeat;
+  background-size: 100% 100%;
+
+}
