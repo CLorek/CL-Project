@@ -1,27 +1,4 @@
-@use "typography";
-
 :host{
   display: flex;
   flex-direction: column;
-}
-
-.title{
-  @include typography.page-content;
-  color: var(--light-on-surface);
-}
-
-.container{
-  display: grid;
-  gap: 1rem;
-  padding: 2rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  background-color: var(--md-sys-color-background);
-
-  @media only screen and (max-width: 900px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  @media only screen and (max-width: 600px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }

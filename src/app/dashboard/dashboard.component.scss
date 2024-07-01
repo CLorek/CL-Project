@@ -1,0 +1,6 @@
+@use "typography";
+
+.title{
+  @include typography.page-content;
+  color: var(--light-on-surface);
+}

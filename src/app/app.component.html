@@ -1,9 +1,5 @@
   <app-appbar/>
-  <div class="title">{{title}}</div>
-  <div class="container">
-    @for(card of cards; track card){
-      <app-card [title]='card.name'></app-card>
-    }
-  </div>
+  <app-dashboard [title]="title"/>
+
 
 
